@@ -1,0 +1,27 @@
+В основном файле
+from mymodule import*
+aaa()
+bbb()
+ccc()
+ddd()
+
+в созданном файле
+def aaa():
+    print('aaa')
+def bbb():
+    print('bbb')
+def ccc():
+    print('ccc')
+def ddd():
+    print('ddd')
+
+Run:
+
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+aaa
+bbb
+ccc
+ddd
+
+Process finished with exit code 0
+Т.е. создали дополнительный файл, в который поместили все функции, которые после импортировали с основного файла с помощью создания модуля!

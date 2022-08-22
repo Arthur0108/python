@@ -1,0 +1,135 @@
+14!
+
+def print_greetings():
+    print('hello')
+    print('you are the best')
+def aaa():
+    print('aaa')
+
+print_greetings()
+print_greetings()
+aaa()
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+hello
+you are the best
+hello
+you are the best
+aaa
+
+Process finished with exit code 0
+_____________________________________________________________________________________________________________________________
+def print_greetings(name):
+    print('hello '+name)
+    print('you are the best '+name)
+
+print_greetings('Petia')
+print_greetings('Vasia')
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+hello Petia
+you are the best Petia
+hello Vasia
+you are the best Vasia
+
+Process finished with exit code 0
+_____________________________________________________________________________________________________________________________________
+
+def print_greetings(name):
+    print('hello '+name)
+    print('you are the best '+name)
+def summa(x,y):
+    return x+y
+def factorial(x):
+    answer=1
+    for i in range(1,x+1):
+        answer=answer*i
+    return answer
+
+print_greetings('Petia')
+print_greetings('Vasia')
+x=summa(10,20)
+print(x)#10+20
+
+for i in range(1,10):
+    print(str(i) +'!\t='+str(factorial(i)))#посчитаем от 1 до 10
+print(factorial(1))#1*1=1
+print(factorial(5))#1*2*3*4*5=120
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+hello Petia
+you are the best Petia
+hello Vasia
+you are the best Vasia
+30
+1!	=1
+2!	=2
+3!	=6
+4!	=24
+5!	=120
+6!	=720
+7!	=5040
+8!	=40320
+9!	=362880
+1
+120
+
+Process finished with exit code 0
+______________________________________________________________________________________________________________________________________________
+15!
+Построим словарь с 2мя пользователями
+
+def create_record(name,phone,adress):
+    record={
+        'name':name,
+        'phone':phone,
+        'adress':adress
+        }
+    return record
+user1=create_record('vasia',77777777,'Basseinaya str. 6')
+user2=create_record('petia',55555555,'Balkonnaya str. 10')
+print(user1)
+print(user2)
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+{'name': 'vasia', 'phone': 77777777, 'adress': 'Basseinaya str. 6'}
+{'name': 'petia', 'phone': 55555555, 'adress': 'Balkonnaya str. 10'}
+
+Process finished with exit code 0
+_______________________________________________________________________________________________________________________________________________
+
+def create_record(name,phone,adress):
+    record={
+        'name':name,
+        'phone':phone,
+        'adress':adress
+        }
+    return record
+user1=create_record('vasia',77777777,'Basseinaya str. 6')
+user2=create_record('petia',55555555,'Balkonnaya str. 10')
+print(user1)
+print(user2)
+
+#допстим хотим наградить медалями
+def give_avard(medal,*persons):#зведочка означает - много персон
+    for person in persons:
+        print('Mr. '+person.title()+' avards a gold ')#title, чтобы было с большой буквы
+
+give_avard('kickboxing','vasia','petia')
+give_avard('grappling','vasia','vitaliy','dima')#можем добавлять дополнительных персон
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+{'name': 'vasia', 'phone': 77777777, 'adress': 'Basseinaya str. 6'}
+{'name': 'petia', 'phone': 55555555, 'adress': 'Balkonnaya str. 10'}
+Mr. Vasia avards a gold 
+Mr. Petia avards a gold 
+Mr. Vasia avards a gold 
+Mr. Vitaliy avards a gold 
+Mr. Dima avards a gold 
+
+Process finished with exit code 0

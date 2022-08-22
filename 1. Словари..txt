@@ -1,0 +1,50 @@
+Создадим, например игру, в которой у вргов будут следующие значения:
+
+enemy={
+    'loc_x':70,
+    'loc_y':50,
+    'color':'gren',
+    'health':100,
+    'name':"Monster",
+    'image':['image1.jpd','image2.jpd','image3.jpd']
+
+
+}
+
+all_enemies = []
+
+for x in range(0, 10):
+    all_enemies.append(enemy.copy()) #значение, чтобы не все объекты принимали сменный параметр, а только один объект
+for ene in all_enemies:
+    print(ene)
+all_enemies[6]['health']=30 #смена определенного параметра у определенного объекта
+all_enemies[7]['name']='Fedia' #смена определенного параметра у определенного объекта
+print('_______________________________')
+for ene in all_enemies:
+    print(ene)
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+_______________________________
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 30, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Fedia', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+{'loc_x': 70, 'loc_y': 50, 'color': 'gren', 'health': 100, 'name': 'Monster', 'image': ['image1.jpd', 'image2.jpd', 'image3.jpd']}
+
+Process finished with exit code 0

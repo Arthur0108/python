@@ -1,0 +1,54 @@
+name=input('Enter your name: ')
+print('Hello '+name)
+
+num1=input('enter first number: ')
+num2=input('enter second number: ')
+nums=int(num1)+int(num2)
+print('nums= '+str(nums))
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+Enter your name: Vasia
+Hello Vasia
+enter first number: 11
+enter second number: 44
+nums= 55
+
+Process finished with exit code 0
+_______________________________________________________________________________________________________________________________________________
+
+message=''
+while True:
+    message=input('Enter password:')
+    if message=='Secret': #если значение будет Secret
+        break
+    print(message +' '+'is not correct') #если другое значение, то будет писать  is not correct
+print('Password was '+message)
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+Enter password:sec
+sec is not correct
+Enter password:Secret
+Password was Secret
+
+Process finished with exit code 0
+_______________________________________________________________________________________________________________________________________________
+
+mylist=[]#создали пустой лист и заполняем пока не введем stop
+msg=''#равняется ничему
+while msg !='stop'.upper():#upper - для ввода stop большми буквами
+    msg=input('enter new item and stop to finish: ')#предлагаем ввести значение
+    mylist.append(msg)#продолжаем добавлять просьбу ввода,после каждой неправильной
+print(msg)
+
+Run:
+C:\Users\A\PycharmProjects\arthur1\venv\Scripts\python.exe C:/Users/A/PycharmProjects/arthur1/test1.py
+enter new item and stop to finish: aaa
+enter new item and stop to finish: bbb
+enter new item and stop to finish: stop
+enter new item and stop to finish: STOP
+STOP
+
+Process finished with exit code 0
+Программа предлагала вводить значения до тех пор, пока не ввели правильное
